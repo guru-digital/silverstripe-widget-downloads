@@ -1,8 +1,8 @@
-<% if $Downloads %>
+<% if $Files %>
 <ul>
-    <% loop  $Downloads  %>
+    <% loop  $Files %>
     <li>
-        <a href="$Me.URL">$Me.Title</a>
+        <a href="$URL">$Title</a>
     </li>
     <% end_loop %>
 </ul>
