@@ -2,7 +2,7 @@
 <ul>
     <% loop  $Files %>
     <li>
-        <a href="$URL">$Title</a>
+        <a href="$File.URL">$Title</a>
     </li>
     <% end_loop %>
 </ul>
