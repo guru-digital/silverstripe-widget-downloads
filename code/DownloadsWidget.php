@@ -31,7 +31,7 @@ class DownloadsWidget extends Widget {
         $downloadsField = TextField::create('Downloads')->setTitle('Downloads')->setDisabled(true)->setValue('You can add downloads once you have saved the record for the first time.');
         if ($this->ID) {
             $BulkUploadComponent = new GridFieldBulkUpload("File");
-            $BulkUploadComponent->setConfig('folderName', "DownloadsWidget");
+//            $BulkUploadComponent->setConfig('folderName', "DownloadsWidget");
             $downloadsField      = new GridField(
                     "Downloads", "Downloads", $this->Files(), GridFieldConfig::create()
                             ->addComponent(new GridFieldToolbarHeader())
