@@ -1,6 +1,7 @@
 <?php
 
-class DownloadFile extends DataObject {
+class DownloadFile extends DataObject
+{
 
     private static $db             = array(
         "SortID"      => "Int",
@@ -14,5 +15,4 @@ class DownloadFile extends DataObject {
     private static $summary_fields = array(
         "Title" => "Title",
     );
-
 }
