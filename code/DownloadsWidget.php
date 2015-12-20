@@ -1,6 +1,7 @@
 <?php
 
-class DownloadsWidget extends Widget {
+class DownloadsWidget extends Widget
+{
 
     private static $db       = array(
     );
@@ -23,7 +24,8 @@ class DownloadsWidget extends Widget {
      */
     private static $description = "Add Downloads to your pages.";
 
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         $fields = parent::getCMSFields();
 
         $fields->addFieldToTab("Root.Main", new TextField('WidgetLabel', 'Widget Label'), "Enabled");
@@ -52,8 +54,8 @@ class DownloadsWidget extends Widget {
         return $fields;
     }
 
-    public function Title() {
+    public function Title()
+    {
         return $this->WidgetLabel;
     }
-
 }
